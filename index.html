@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/main.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +14,13 @@
 
 <body>
   <nav class="pink darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Cats</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Cats</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Meow</a></li>
+        <li><a rel="noopener" target="_blank" href="https://lostdogrescue.org/">Meow</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Meow</a></li>
+        <li><a rel="noopener" target="_blank" href="https://lostdogrescue.org/">Meow</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -33,12 +34,14 @@
       </div>
 
       <div class="row center">
-        <a onclick="getCats()" id="download-button" class="btn-large waves-effect waves-light green">New Cat</a>
+        <a onclick="getCats()" id="download-button" class="btn-large waves-effect waves-light pink accent-2">New Cat</a>
         <br><br>
-        <div id="catpic"></div>
+        <div  id="catpic">
+          <img style="max-width: 400px;" src="img/defaultCat.jpg" alt="">
+        </div>
 
         <h5>Meows Everywhere!!</h5>
-        <br><br><br>
+        <br><br><br><br>
 
       </div>
 

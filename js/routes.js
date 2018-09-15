@@ -9,7 +9,7 @@ axios
 })
 .then(data => {
   document.getElementById("catpic").innerHTML = `
- <img style="max-width: 356px;" src ="${data.file}"/>
+ <img class="z-depth-3" style="max-width: 356px; min-width: 356px; max-height: 433px;" src ="${data.file}"/>
    `;
 });
 }
